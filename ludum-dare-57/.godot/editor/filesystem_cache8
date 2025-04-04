@@ -1,0 +1,12 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1743782061
+icon.svg::CompressedTexture2D::5563895769676083682::1743782005::1743782061::1::::<><>::
+::res://ludum-dare-57/::1743782005
+::res://ludum-dare-57/Scenes/::1743782005
+Home_Menu.tscn::PackedScene::9138688947510281452::1743782005::0::1::::<><>::res://ludum-dare-57/Scripts/home_menu.gd
+Main.tscn::PackedScene::7867484873839715259::1743782005::0::1::::<><>::
+::res://ludum-dare-57/Scripts/::1743782005
+home_menu.gd::GDScript::-1::1743782005::0::1::::HomeMenu<>Control<>::
+style.gd::GDScript::-1::1743782005::0::1::::<>Node<>::
+::res://ludum-dare-57/Scripts/Managers/::1743782005
+Manager.gd::GDScript::-1::1743782005::0::1::::<>Control<>::
