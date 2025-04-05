@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://dvv7r6crnlkk0"]
+
+[ext_resource type="Script" uid="uid://cj4ub52gswq3t" path="res://ludum-dare-57/Scripts/treasure/diamond.gd" id="1_d4bju"]
+[ext_resource type="Texture2D" uid="uid://7jlyqxp66uex" path="res://ludum-dare-57/Assets/sprites/treasure.png" id="2_7vtw7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vtw7"]
+atlas = ExtResource("2_7vtw7")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cahp0"]
+atlas = ExtResource("2_7vtw7")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3f3l"]
+atlas = ExtResource("2_7vtw7")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u60uv"]
+atlas = ExtResource("2_7vtw7")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6lcev"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vtw7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cahp0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3f3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u60uv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mkn3p"]
+radius = 9.0
+
+[node name="Diamond" type="Area2D"]
+z_index = 1
+script = ExtResource("1_d4bju")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6lcev")
+autoplay = "default"
+frame = 2
+frame_progress = 0.0504446
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mkn3p")

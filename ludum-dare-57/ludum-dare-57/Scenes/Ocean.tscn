@@ -1,9 +1,13 @@
-[gd_scene load_steps=10 format=4 uid="uid://b5ens0st2yj3m"]
+[gd_scene load_steps=14 format=4 uid="uid://b5ens0st2yj3m"]
 
 [ext_resource type="Script" uid="uid://dnt7vn75k4jx3" path="res://ludum-dare-57/Scripts/ocean.gd" id="1_qol4w"]
-[ext_resource type="Texture2D" uid="uid://ci1e3mo0vkn2f" path="res://ludum-dare-57/Assets/terrain-pink.png" id="2_f3xpn"]
-[ext_resource type="Texture2D" uid="uid://c3du5kjoyf6od" path="res://ludum-dare-57/Assets/terrain-brown.png" id="3_ntwyg"]
-[ext_resource type="Texture2D" uid="uid://cd754lodywkym" path="res://ludum-dare-57/Assets/terrain-green.png" id="4_yiy8q"]
+[ext_resource type="Texture2D" uid="uid://ci1e3mo0vkn2f" path="res://ludum-dare-57/Assets/sprites/terrain-pink.png" id="2_f3xpn"]
+[ext_resource type="Texture2D" uid="uid://c3du5kjoyf6od" path="res://ludum-dare-57/Assets/sprites/terrain-brown.png" id="3_ntwyg"]
+[ext_resource type="Texture2D" uid="uid://cd754lodywkym" path="res://ludum-dare-57/Assets/sprites/terrain-green.png" id="4_yiy8q"]
+[ext_resource type="PackedScene" uid="uid://cyn0j7a7r6uon" path="res://ludum-dare-57/Scenes/treasure/Coin.tscn" id="5_ntwyg"]
+[ext_resource type="PackedScene" uid="uid://dvv7r6crnlkk0" path="res://ludum-dare-57/Scenes/treasure/Diamond.tscn" id="6_vwbb6"]
+[ext_resource type="PackedScene" uid="uid://b3d7xf32q1hb4" path="res://ludum-dare-57/Scenes/treasure/Ruby.tscn" id="7_2insi"]
+[ext_resource type="PackedScene" uid="uid://qn6vkwoojsia" path="res://ludum-dare-57/Scenes/treasure/Emerald.tscn" id="8_7dv0y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cajud"]
 texture = ExtResource("2_f3xpn")
@@ -195,3 +199,16 @@ tile_set = SubResource("TileSet_7dv0y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_f3xpn")
+
+[node name="Coin" parent="." instance=ExtResource("5_ntwyg")]
+position = Vector2(-215, 3)
+
+[node name="Diamond" parent="." instance=ExtResource("6_vwbb6")]
+position = Vector2(-430, 0)
+
+[node name="Ruby" parent="." instance=ExtResource("7_2insi")]
+z_index = 1
+position = Vector2(-375, -2)
+
+[node name="Emerald" parent="." instance=ExtResource("8_7dv0y")]
+position = Vector2(-309, -1)

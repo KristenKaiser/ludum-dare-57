@@ -4,8 +4,6 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 
-
-
 func _ready() -> void:
 	camera_2d.enabled = true
 
@@ -17,6 +15,4 @@ func _physics_process(delta: float) -> void:
 	var y_direction := Input.get_axis("ui_up", "ui_down")
 	velocity.x = x_direction * SPEED
 	velocity.y = y_direction * SPEED
-
-
 	move_and_slide()

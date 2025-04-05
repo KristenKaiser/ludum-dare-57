@@ -10,3 +10,14 @@ res://ludum-dare-57/Scenes/player.tscn
 res://ludum-dare-57/Scenes/game.gd
 res://ludum-dare-57/Scenes/sub.gd
 res://ludum-dare-57/Scripts/sub.gd
+res://ludum-dare-57/Scenes/Coin.tscn
+res://ludum-dare-57/Scripts/treasure.gd
+res://ludum-dare-57/Scenes/coin.gd
+res://ludum-dare-57/Scripts/player.gd
+res://ludum-dare-57/Scenes/treasure/Coin.tscn
+res://ludum-dare-57/Scripts/treasure/emerald.gd
+res://ludum-dare-57/Scripts/treasure/ruby.gd
+res://ludum-dare-57/Scripts/treasure/diamond.gd
+res://ludum-dare-57/Scenes/treasure/Diamond.tscn
+res://ludum-dare-57/Scenes/treasure/Emerald.tscn
+res://ludum-dare-57/Scenes/treasure/Ruby.tscn

@@ -1,9 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dme8xcjeu52l3"]
+[gd_scene load_steps=3 format=3 uid="uid://dme8xcjeu52l3"]
 
 [ext_resource type="PackedScene" uid="uid://bqhhisjak71io" path="res://ludum-dare-57/Scenes/Sub.tscn" id="1_5sqi4"]
+[ext_resource type="Script" uid="uid://cd31byf0kba55" path="res://ludum-dare-57/Scripts/player.gd" id="1_qln0q"]
 
 [node name="Player" type="Node2D"]
 z_index = 5
+script = ExtResource("1_qln0q")
 
 [node name="Sub" parent="." instance=ExtResource("1_5sqi4")]
 

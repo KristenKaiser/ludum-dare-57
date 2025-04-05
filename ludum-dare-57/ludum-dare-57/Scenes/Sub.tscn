@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bqhhisjak71io"]
 
-[ext_resource type="Texture2D" uid="uid://crpaylhcr288c" path="res://ludum-dare-57/Assets/ship.png" id="1_56ed4"]
+[ext_resource type="Texture2D" uid="uid://crpaylhcr288c" path="res://ludum-dare-57/Assets/sprites/ship.png" id="1_56ed4"]
 [ext_resource type="Script" uid="uid://db0igq07c7mvv" path="res://ludum-dare-57/Scripts/sub.gd" id="1_kyhsp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kyhsp"]

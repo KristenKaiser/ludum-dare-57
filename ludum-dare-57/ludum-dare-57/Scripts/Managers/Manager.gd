@@ -13,7 +13,7 @@ const GAME = preload("res://ludum-dare-57/Scenes/Game.tscn")
 var game : Node2D
 
 const PLAYER = preload("res://ludum-dare-57/Scenes/player.tscn")
-var player: Node2D
+var player: Player
 
 func _ready() -> void:
 	Style.maximize_container(self)
