@@ -1,0 +1,12 @@
+res://ludum-dare-57/Scenes/Home_Menu.tscn
+res://ludum-dare-57/Scenes/Main.tscn
+res://ludum-dare-57/Scenes/Sub.tscn
+res://ludum-dare-57/Scripts/Managers/Manager.gd
+res://ludum-dare-57/Scripts/ocean.gd
+res://ludum-dare-57/Scenes/Ocean.tscn
+res://ludum-dare-57/Scripts/home_menu.gd
+res://ludum-dare-57/Scenes/Game.tscn
+res://ludum-dare-57/Scenes/player.tscn
+res://ludum-dare-57/Scenes/game.gd
+res://ludum-dare-57/Scenes/sub.gd
+res://ludum-dare-57/Scripts/sub.gd

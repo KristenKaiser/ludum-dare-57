@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3 uid="uid://bqhhisjak71io"]
+
+[ext_resource type="Texture2D" uid="uid://crpaylhcr288c" path="res://ludum-dare-57/Assets/ship.png" id="1_56ed4"]
+[ext_resource type="Script" uid="uid://db0igq07c7mvv" path="res://ludum-dare-57/Scripts/sub.gd" id="1_kyhsp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyhsp"]
+atlas = ExtResource("1_56ed4")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2e3s2"]
+atlas = ExtResource("1_56ed4")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d5s6i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyhsp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2e3s2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qd85v"]
+radius = 9.0
+height = 26.0
+
+[node name="Sub" type="CharacterBody2D"]
+script = ExtResource("1_kyhsp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_d5s6i")
+autoplay = "default"
+frame_progress = 0.58116
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_qd85v")
