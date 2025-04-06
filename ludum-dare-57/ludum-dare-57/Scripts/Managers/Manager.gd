@@ -15,6 +15,9 @@ var game : Node2D
 const PLAYER = preload("res://ludum-dare-57/Scenes/player.tscn")
 var player: Player
 
+const HUD = preload("res://ludum-dare-57/Scenes/Hud.tscn")
+var hud : Hud
+
 func _ready() -> void:
 	Style.maximize_container(self)
 	load_home_menu()
@@ -42,3 +45,7 @@ func start_game() -> void:
 	game.add_child(player)
 	print("END - Ocean Initallized")
 	
+	print("START - Initiallizing Hud")
+	hud = HUD.instantiate()
+	game.add_child(hud)
+	print("END - Hud Initallized")

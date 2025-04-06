@@ -21,3 +21,8 @@ res://ludum-dare-57/Scripts/treasure/diamond.gd
 res://ludum-dare-57/Scenes/treasure/Diamond.tscn
 res://ludum-dare-57/Scenes/treasure/Emerald.tscn
 res://ludum-dare-57/Scenes/treasure/Ruby.tscn
+res://ludum-dare-57/Scripts/oxygen.gd
+res://ludum-dare-57/Scenes/oxygen_timer.gd
+res://ludum-dare-57/Scenes/Hud.tscn
+res://ludum-dare-57/Scenes/hud.gd
+res://ludum-dare-57/Scripts/hud.gd
