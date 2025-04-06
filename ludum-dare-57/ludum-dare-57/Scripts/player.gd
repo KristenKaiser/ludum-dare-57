@@ -23,6 +23,7 @@ func start_oxygen_timer()->void:
 		oxygen_timer.stop()
 	oxygen_timer.wait_time = oxygen_time
 	is_touching_oxygen = false
+	Manager.hud.shop_button.disabled = true
 	oxygen_timer.start()
 
 func _on_oxygen_timer_timeout() -> void:

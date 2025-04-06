@@ -17,7 +17,9 @@ func _ready() -> void:
 	buy_motors_button.text = "$" + str(motor_price)
 
 func open_shop()->void: 
-	popup_panel.show()
+	if Manager.player.is_touching_oxygen:
+		popup_panel.show()
+
 
 func _on_buy_oxygen_button_up() -> void:
 	if Manager.player.score >= oxygen_price:

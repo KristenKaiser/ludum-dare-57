@@ -16,6 +16,7 @@ func _physics_process(delta: float) -> void:
 
 func enter_oxygen():
 	Manager.player.is_touching_oxygen = true
+	Manager.hud.shop_button.disabled = false
 	Manager.player.oxygen_timer.stop()
 	print("enter oxygen")
 	

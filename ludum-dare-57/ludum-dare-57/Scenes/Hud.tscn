@@ -67,6 +67,7 @@ text = "0                 "
 [node name="shop_button" type="Button" parent="HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+disabled = true
 text = "       SHOP!       "
 icon = SubResource("GradientTexture2D_a6i1t")
 icon_alignment = 1
