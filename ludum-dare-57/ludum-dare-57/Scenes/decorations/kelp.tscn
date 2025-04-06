@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://btmuw0abos75c"]
+
+[ext_resource type="Texture2D" uid="uid://dipeq145dnn20" path="res://ludum-dare-57/Assets/sprites/decorations.png" id="1_8kjfo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u804l"]
+atlas = ExtResource("1_8kjfo")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_53off"]
+atlas = ExtResource("1_8kjfo")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mn5cl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u804l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_53off")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[node name="Kelp" type="AnimatedSprite2D"]
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_mn5cl")
+autoplay = "default"
+frame_progress = 0.09507
