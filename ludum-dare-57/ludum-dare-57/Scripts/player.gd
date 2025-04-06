@@ -28,7 +28,9 @@ func start_oxygen_timer()->void:
 func _on_oxygen_timer_timeout() -> void:
 	oxygen_timer.stop()
 	if is_touching_oxygen == false:
-		print("you died")
+		Manager.load_dead_menu()
+		Manager.end_game()
+		
 
 func update_speed(speed_delta : int) -> void:
 	current_vehicle.speed += speed_delta

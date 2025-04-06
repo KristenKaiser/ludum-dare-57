@@ -21,6 +21,9 @@ var hud : Hud
 const SHOP = preload("res://ludum-dare-57/Scenes/Shop.tscn")
 var shop : Shop
 
+const DEAD_MENU = preload("res://ludum-dare-57/Scenes/Dead_Menu.tscn")
+var dead_menu
+
 func _ready() -> void:
 	Style.maximize_container(self)
 	load_home_menu()
@@ -58,3 +61,16 @@ func start_game() -> void:
 	game.add_child(shop)
 	shop.hide()
 	print("END - Shop Initallized")
+
+func end_game()->void:
+	shop.queue_free()
+	hud.queue_free()
+	player.queue_free()
+	ocean.queue_free()
+	game.queue_free()
+	
+func load_dead_menu()->void:
+	print("START - Initiallizing Dead Menu")
+	dead_menu = DEAD_MENU.instantiate()
+	add_child(dead_menu)
+	print("END - Dead Menu Initallized")

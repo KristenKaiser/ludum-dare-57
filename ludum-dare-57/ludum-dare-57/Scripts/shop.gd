@@ -19,9 +19,6 @@ func _ready() -> void:
 func open_shop()->void: 
 	popup_panel.show()
 
-
-
-
 func _on_buy_oxygen_button_up() -> void:
 	if Manager.player.score >= oxygen_price:
 		Manager.player.update_score(-1 * oxygen_price)
