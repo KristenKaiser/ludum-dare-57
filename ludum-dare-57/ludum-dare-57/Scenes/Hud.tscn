@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddayvd4a7k3so"]
+[gd_scene load_steps=4 format=3 uid="uid://ddayvd4a7k3so"]
 
 [ext_resource type="Script" uid="uid://c231m777o7ry2" path="res://ludum-dare-57/Scripts/hud.gd" id="1_qqvsv"]
+
+[sub_resource type="Gradient" id="Gradient_qqvsv"]
+offsets = PackedFloat32Array(0, 0.501976, 1)
+colors = PackedColorArray(0.282353, 0.145098, 0.0901961, 1, 0.556863, 0.309804, 0.211765, 1, 0.284124, 0.14417, 0.088445, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a6i1t"]
+gradient = SubResource("Gradient_qqvsv")
+width = 120
+fill_from = Vector2(0, 0.5)
+fill_to = Vector2(1, 0.5)
+metadata/_snap_count = 2
+metadata/_snap_enabled = true
 
 [node name="Hud" type="CanvasLayer"]
 script = ExtResource("1_qqvsv")
@@ -24,7 +37,7 @@ size_flags_horizontal = 8
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-text = "Oxygen Remaining"
+text = "     Oxygen Remaining     "
 
 [node name="time_label" type="Label" parent="HBoxContainer/PanelContainer/VBoxContainer"]
 layout_mode = 2
@@ -49,4 +62,13 @@ text = "$"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 6
-text = "0"
+text = "0                 "
+
+[node name="shop_button" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "       SHOP!       "
+icon = SubResource("GradientTexture2D_a6i1t")
+icon_alignment = 1
+
+[connection signal="button_down" from="HBoxContainer/shop_button" to="." method="_on_shop_button_down"]

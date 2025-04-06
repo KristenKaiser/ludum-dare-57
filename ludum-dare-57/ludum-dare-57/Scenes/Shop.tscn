@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnv18712rikni"]
+
+[ext_resource type="Script" uid="uid://sl2qxcrjl83q" path="res://ludum-dare-57/Scripts/shop.gd" id="1_w81so"]
+
+[node name="Shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w81so")
+
+[node name="PopupPanel" type="PopupPanel" parent="."]
+initial_position = 1
+size = Vector2i(355, 101)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PopupPanel"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 351.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="shop label" type="Label" parent="PopupPanel/VBoxContainer"]
+layout_mode = 2
+text = "SHOP! SHOP! SHOP! SHOP! SHOP! SHOP!"
+horizontal_alignment = 1
+
+[node name="Oxygen" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="buy_oxygen_button" type="Button" parent="PopupPanel/VBoxContainer/Oxygen"]
+layout_mode = 2
+text = "$20"
+
+[node name="oxygen_label" type="Label" parent="PopupPanel/VBoxContainer/Oxygen"]
+layout_mode = 2
+text = "Upgrade Oxygen : +5 seconds to oxygen"
+
+[node name="speed" type="HBoxContainer" parent="PopupPanel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="buy_motors_button" type="Button" parent="PopupPanel/VBoxContainer/speed"]
+layout_mode = 2
+text = "$20"
+
+[node name="motor_label" type="Label" parent="PopupPanel/VBoxContainer/speed"]
+layout_mode = 2
+text = "Upgrade Engines: Increase Speed"
+
+[connection signal="button_up" from="PopupPanel/VBoxContainer/Oxygen/buy_oxygen_button" to="." method="_on_buy_oxygen_button_up"]
+[connection signal="button_up" from="PopupPanel/VBoxContainer/speed/buy_motors_button" to="." method="_on_buy_motors_button_up"]

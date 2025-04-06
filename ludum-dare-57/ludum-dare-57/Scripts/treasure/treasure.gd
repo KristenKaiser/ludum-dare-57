@@ -7,9 +7,7 @@ func _ready() -> void:
 	self.body_entered.connect(collect_treasure)
 	
 func collect_treasure(treasure :Node2D)->void:
-	print("collected")
 	Manager.player.update_score(get_value())
-	print(Manager.player.score)
 	self.queue_free()
 
 func get_value() -> int:

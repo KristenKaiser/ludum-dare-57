@@ -18,6 +18,9 @@ var player: Player
 const HUD = preload("res://ludum-dare-57/Scenes/Hud.tscn")
 var hud : Hud
 
+const SHOP = preload("res://ludum-dare-57/Scenes/Shop.tscn")
+var shop : Shop
+
 func _ready() -> void:
 	Style.maximize_container(self)
 	load_home_menu()
@@ -49,3 +52,9 @@ func start_game() -> void:
 	hud = HUD.instantiate()
 	game.add_child(hud)
 	print("END - Hud Initallized")
+	
+	print("START - Initiallizing Shop")
+	shop = SHOP.instantiate()
+	game.add_child(shop)
+	shop.hide()
+	print("END - Shop Initallized")

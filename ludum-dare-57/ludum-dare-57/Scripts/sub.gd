@@ -1,6 +1,8 @@
 extends CharacterBody2D
+class_name Vehicle
+
 @onready var camera_2d: Camera2D = $Camera2D
-const SPEED = 300.0
+var speed = 50
 
 func _ready() -> void:
 	camera_2d.enabled = true
@@ -8,8 +10,8 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	var x_direction := Input.get_axis("ui_left", "ui_right")
 	var y_direction := Input.get_axis("ui_up", "ui_down")
-	velocity.x = x_direction * SPEED
-	velocity.y = y_direction * SPEED
+	velocity.x = x_direction * speed
+	velocity.y = y_direction * speed
 	move_and_slide()
 
 func enter_oxygen():

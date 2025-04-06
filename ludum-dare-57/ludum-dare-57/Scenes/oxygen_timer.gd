@@ -1,8 +1,7 @@
 extends Timer
 var ui_time : int = -1
 
-#func _on_timer_timeout():
-	#print("no more time")
+
 func _process(delta: float) -> void:
 	update_ui()
 	

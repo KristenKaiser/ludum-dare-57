@@ -26,3 +26,6 @@ res://ludum-dare-57/Scenes/oxygen_timer.gd
 res://ludum-dare-57/Scenes/Hud.tscn
 res://ludum-dare-57/Scenes/hud.gd
 res://ludum-dare-57/Scripts/hud.gd
+res://ludum-dare-57/Scripts/treasure/treasure.gd
+res://ludum-dare-57/Scenes/Shop.tscn
+res://ludum-dare-57/Scripts/shop.gd

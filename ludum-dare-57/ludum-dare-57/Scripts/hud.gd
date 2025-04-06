@@ -9,3 +9,6 @@ func update_oxygen_timer(time : int) -> void:
 
 func update_cash(cash : int) -> void:
 	score.text = str(cash)
+
+func _on_shop_button_down() -> void:
+	Manager.shop.open_shop()

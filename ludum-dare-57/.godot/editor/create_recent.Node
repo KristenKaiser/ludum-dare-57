@@ -1,7 +1,9 @@
-HBoxContainer
-CanvasLayer
-VBoxContainer
 Label
+HBoxContainer
+VBoxContainer
+Button
+PopupPanel
+CanvasLayer
 PanelContainer
 ColorRect
 Control
@@ -10,5 +12,3 @@ Timer
 Area2D
 CollisionShape2D
 AnimatedSprite2D
-StaticBody2D
-Node
