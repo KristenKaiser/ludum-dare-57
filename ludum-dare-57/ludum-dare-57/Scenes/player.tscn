@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bqhhisjak71io" path="res://ludum-dare-57/Scenes/Sub.tscn" id="1_5sqi4"]
 [ext_resource type="Script" uid="uid://cd31byf0kba55" path="res://ludum-dare-57/Scripts/player.gd" id="1_qln0q"]
 [ext_resource type="Script" uid="uid://vrarkiawuvvm" path="res://ludum-dare-57/Scenes/oxygen_timer.gd" id="3_destq"]
-[ext_resource type="Texture2D" uid="uid://bpn2cjc6vy152" path="res://ludum-dare-57/Assets/pointlight.png" id="3_un7pt"]
+[ext_resource type="Texture2D" uid="uid://bdywnuawawwsp" path="res://ludum-dare-57/Assets/diffuse_point_light.png" id="3_un7pt"]
 
 [node name="Player" type="Node2D"]
 z_index = 5
@@ -16,8 +16,12 @@ enabled = false
 zoom = Vector2(2, 2)
 
 [node name="PointLight2D" type="PointLight2D" parent="Sub"]
-position = Vector2(1, -2)
-scale = Vector2(0.389648, 0.389648)
+position = Vector2(1.52588e-05, 2.00002)
+scale = Vector2(1.29089, 1.29089)
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.898039)
+shadow_filter = 1
+shadow_filter_smooth = 16.0
 texture = ExtResource("3_un7pt")
 
 [node name="oxygen_timer" type="Timer" parent="."]

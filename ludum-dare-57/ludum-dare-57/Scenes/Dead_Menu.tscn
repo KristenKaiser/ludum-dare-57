@@ -48,5 +48,5 @@ size_flags_vertical = 6
 text = "Quit"
 
 [connection signal="button_down" from="VBoxContainer/Start_Button" to="." method="_on_start_button_down"]
-[connection signal="button_down" from="VBoxContainer/Quit_Button" to="." method="_on_start_button_down"]
 [connection signal="button_down" from="VBoxContainer/Quit_Button" to="." method="_on_quit_button_down"]
+[connection signal="button_down" from="VBoxContainer/Quit_Button" to="." method="_on_start_button_down"]
