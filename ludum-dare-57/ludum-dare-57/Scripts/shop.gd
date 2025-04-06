@@ -23,12 +23,18 @@ func open_shop()->void:
 
 
 func _on_buy_oxygen_button_up() -> void:
-	oxygen_price *= oxygen_price_multiplier
-	buy_oxygen_button.text = "$" + str(oxygen_price)
-	Manager.player.oxygen_time += oxygen_delta
+	if Manager.player.score >= oxygen_price:
+		Manager.player.update_score(-1 * oxygen_price)
+		oxygen_price *= oxygen_price_multiplier
+		buy_oxygen_button.text = "$" + str(oxygen_price)
+		Manager.player.oxygen_time += oxygen_delta
+		
 
 func _on_buy_motors_button_up() -> void:
-	motor_price *= motor_price_multiplier
-	buy_motors_button.text = "$" + str(motor_price)
-	Manager.player.update_speed(motor_delta)
+	if Manager.player.score >= motor_price:
+		Manager.player.update_score(-1 * motor_price)
+		motor_price *= motor_price_multiplier
+		buy_motors_button.text = "$" + str(motor_price)
+		Manager.player.update_speed(motor_delta)
+		
 	
