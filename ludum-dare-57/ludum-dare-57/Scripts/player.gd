@@ -4,11 +4,11 @@ class_name Player
 
 var score : int = 0
 var is_above_water : bool = false
-var oxygen_time : int = 500000#15
+var oxygen_time : int = 15
 var is_touching_oxygen = false
 var speed : int = 100
-@onready var sub: Vehicle = $Sub
-var current_vehicle : Vehicle
+@onready var sub: Diver = $Sub
+var current_vehicle : Diver
 
 func _ready() -> void:
 	current_vehicle = sub

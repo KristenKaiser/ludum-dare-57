@@ -16,3 +16,7 @@ res://ludum-dare-57/Scripts/treasure/treasure.gd
 res://ludum-dare-57/Scenes/AudioManager.tscn
 res://ludum-dare-57/Scripts/Managers/audio_manager.gd
 res://ludum-dare-57/Scripts/Managers/Manager.gd
+res://ludum-dare-57/Scripts/sub.gd
+res://ludum-dare-57/Scripts/player.gd
+res://ludum-dare-57/Scenes/Human.tscn
+res://ludum-dare-57/Scripts/shop.gd
