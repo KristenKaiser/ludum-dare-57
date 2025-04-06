@@ -12,3 +12,7 @@ res://ludum-dare-57/Scenes/Hud.tscn
 res://ludum-dare-57/Scenes/Shop.tscn
 res://ludum-dare-57/Scenes/Dead_Menu.tscn
 res://ludum-dare-57/Scenes/decorations/kelp.tscn
+res://ludum-dare-57/Scripts/treasure/treasure.gd
+res://ludum-dare-57/Scenes/AudioManager.tscn
+res://ludum-dare-57/Scripts/Managers/audio_manager.gd
+res://ludum-dare-57/Scripts/Managers/Manager.gd

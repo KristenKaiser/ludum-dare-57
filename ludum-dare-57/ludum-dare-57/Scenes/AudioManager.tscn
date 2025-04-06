@@ -1,0 +1,41 @@
+[gd_scene load_steps=10 format=3 uid="uid://87i1prq6k28x"]
+
+[ext_resource type="Script" uid="uid://26jauy84sh77" path="res://ludum-dare-57/Scripts/Managers/audio_manager.gd" id="1_cu4cg"]
+[ext_resource type="AudioStream" uid="uid://cia6nqoydf2le" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-001.wav" id="2_gkglg"]
+[ext_resource type="AudioStream" uid="uid://bm66i510niy33" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-002.wav" id="3_031uc"]
+[ext_resource type="AudioStream" uid="uid://dn7wkjmbtok36" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-006.wav" id="4_cu4cg"]
+[ext_resource type="AudioStream" uid="uid://fj5wecuby2v3" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-007.wav" id="5_gkglg"]
+[ext_resource type="AudioStream" uid="uid://cab4gq5dx7bhg" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-009.wav" id="6_031uc"]
+[ext_resource type="AudioStream" uid="uid://38c42feocwgq" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-010.wav" id="7_512or"]
+[ext_resource type="AudioStream" uid="uid://biggyxjjpcrog" path="res://ludum-dare-57/Assets/audio/sound_effect_coin-013.wav" id="8_epr2c"]
+[ext_resource type="AudioStream" uid="uid://dgfdy2umo7khh" path="res://ludum-dare-57/Assets/audio/music_balimar.wav" id="9_512or"]
+
+[node name="AudioManager" type="Node2D"]
+script = ExtResource("1_cu4cg")
+
+[node name="coins" type="Node" parent="."]
+
+[node name="coin1" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("2_gkglg")
+
+[node name="coin2" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("3_031uc")
+
+[node name="coin3" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("4_cu4cg")
+
+[node name="coin4" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("5_gkglg")
+
+[node name="coin5" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("6_031uc")
+
+[node name="coin6" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("7_512or")
+
+[node name="coin7" type="AudioStreamPlayer" parent="coins"]
+stream = ExtResource("8_epr2c")
+
+[node name="background_music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_512or")
+autoplay = true

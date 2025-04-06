@@ -6,6 +6,9 @@ const MAIN = preload("res://ludum-dare-57/Scenes/Main.tscn")
 const HOME_MENU = preload("res://ludum-dare-57/Scenes/Home_Menu.tscn")
 var home_menu : HomeMenu
 
+const AUDIO_MANAGER = preload("res://ludum-dare-57/Scenes/AudioManager.tscn")
+var audio_manager : AudioManager
+
 const OCEAN = preload("res://ludum-dare-57/Scenes/Ocean.tscn")
 var ocean : Ocean
 
@@ -33,6 +36,12 @@ func load_home_menu() -> void:
 	home_menu = HOME_MENU.instantiate()
 	add_child(home_menu)
 	print("END - Home Menu Initallized")
+	
+	print("START - Initiallizing Audio Manager")
+	audio_manager = AUDIO_MANAGER.instantiate()
+	add_child(audio_manager)
+	print("END - Audio Manager Initallized")
+
 	
 func start_game() -> void:
 	home_menu.hide()

@@ -1,3 +1,4 @@
+Node
 AudioStreamPlayer
 AudioStreamPlayer2D
 PointLight2D
@@ -8,8 +9,6 @@ Area2D
 TextureRect
 ColorRect
 CanvasModulate
-Node
 AnimatedSprite2D
 Label
 HBoxContainer
-VBoxContainer
