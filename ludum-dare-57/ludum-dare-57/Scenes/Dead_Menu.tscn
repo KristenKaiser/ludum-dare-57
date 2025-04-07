@@ -16,8 +16,10 @@ anchor_mode = 0
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1156.0
-offset_bottom = 652.0
+offset_left = -2335.0
+offset_top = -1412.0
+offset_right = 3658.0
+offset_bottom = 2142.0
 color = Color(0, 0.186626, 0.187284, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

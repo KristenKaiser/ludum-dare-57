@@ -44,7 +44,7 @@ func _physics_process(delta: float) -> void:
 		sub_sprite.flip_h = true
 	elif velocity.x > 0: 
 		sub_sprite.flip_h = false	
-	update_rotation(velocity.x, velocity.y)
+	update_rotation(x_direction, y_direction)
 	if x_direction == 0 && y_direction == 0:
 		sub_sprite.pause()
 	else:
@@ -52,10 +52,13 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func enter_oxygen():
+	
 	Manager.player.is_touching_oxygen = true
 	Manager.hud.shop_button.disabled = false
 	Manager.player.oxygen_timer.stop()
-	print("enter oxygen")
+	await get_tree().create_timer(.01).timeout
+	Manager.hud.update_oxygen_timer(Manager.player.oxygen_time)
+	
 	
 func exit_oxygen():
 	Manager.player.start_oxygen_timer()

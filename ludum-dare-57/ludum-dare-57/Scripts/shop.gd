@@ -15,7 +15,7 @@ var motor_price : int = 5
 var motor_delta : int = 25
 
 
-var sub_price : int = 200
+var sub_price : int = 100
 @onready var buy_sub_button: Button = $PopupPanel/VBoxContainer/speed2/buy_sub_button
 
 

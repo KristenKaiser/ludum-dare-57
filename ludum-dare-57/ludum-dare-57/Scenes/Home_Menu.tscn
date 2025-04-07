@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://d3g34v1xprmgy"]
+[gd_scene load_steps=5 format=3 uid="uid://d3g34v1xprmgy"]
 
 [ext_resource type="Script" uid="uid://cwth3oclupyn" path="res://ludum-dare-57/Scripts/home_menu.gd" id="1_dtqcc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yj6cn"]
+font_size = 101
+font_color = Color(0.113725, 0.0745098, 0.956863, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g14t3"]
+font_size = 66
+font_color = Color(0.113725, 0.0745098, 0.956863, 1)
+
+[sub_resource type="FontVariation" id="FontVariation_l8353"]
 
 [node name="Home_Menu" type="Control"]
 layout_mode = 3
@@ -13,31 +23,51 @@ script = ExtResource("1_dtqcc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1157.0
-offset_bottom = 655.0
+offset_left = -4118.0
+offset_top = -3081.0
+offset_right = 4889.0
+offset_bottom = 3883.0
+mouse_filter = 2
 color = Color(0.25098, 1, 1, 1)
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+offset_right = 1149.0
+offset_bottom = 117.0
+text = " Ludum Dare 57"
+label_settings = SubResource("LabelSettings_yj6cn")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_top = 119.0
+offset_right = 1149.0
+offset_bottom = 257.0
+text = "DEPTHS"
+label_settings = SubResource("LabelSettings_yj6cn")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Label2"]
+offset_top = 392.0
+offset_right = 1149.0
+offset_bottom = 530.0
+text = "By PaperDuck"
+label_settings = SubResource("LabelSettings_g14t3")
+horizontal_alignment = 2
+vertical_alignment = 2
 
 [node name="Camera2D" type="Camera2D" parent="."]
 anchor_mode = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_use_anchors_ = true
-
-[node name="Start_Button" type="Button" parent="VBoxContainer"]
+[node name="Start_Button" type="Button" parent="."]
 layout_mode = 2
+offset_left = 315.0
+offset_top = 313.0
+offset_right = 884.395
+offset_bottom = 449.0
 size_flags_horizontal = 4
 size_flags_vertical = 6
+theme_override_fonts/font = SubResource("FontVariation_l8353")
+theme_override_font_sizes/font_size = 76
 text = "Start Game"
 
-[connection signal="button_down" from="VBoxContainer/Start_Button" to="." method="_on_start_button_down"]
+[connection signal="button_down" from="Start_Button" to="." method="_on_start_button_down"]

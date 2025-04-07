@@ -43,7 +43,7 @@ text = "     Oxygen Remaining     "
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-text = "00:00"
+text = "~"
 
 [node name="PanelContainer2" type="PanelContainer" parent="HBoxContainer"]
 layout_mode = 2

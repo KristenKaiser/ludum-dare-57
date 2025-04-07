@@ -21,10 +21,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -5.0
-offset_top = -31.0
-offset_right = 360.0
-offset_bottom = 97.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 369.0
+offset_bottom = 132.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
@@ -68,7 +68,7 @@ size_flags_vertical = 4
 
 [node name="buy_sub_button" type="Button" parent="PopupPanel/VBoxContainer/speed2"]
 layout_mode = 2
-text = "$200"
+text = "$100"
 
 [node name="sub_label" type="Label" parent="PopupPanel/VBoxContainer/speed2"]
 layout_mode = 2

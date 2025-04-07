@@ -1010,6 +1010,57 @@ position = Vector2(-44, 525)
 [node name="Coin49" parent="treasure/coins" instance=ExtResource("6_2insi")]
 position = Vector2(124, 10)
 
+[node name="Coin50" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-494, 208)
+
+[node name="Coin51" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-856, 263)
+
+[node name="Coin52" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-894, 360)
+
+[node name="Coin53" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-773, 100)
+
+[node name="Coin54" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(235, 643)
+
+[node name="Coin55" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(210, 643)
+
+[node name="Coin56" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(189, 643)
+
+[node name="Coin57" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(162, 645)
+
+[node name="Coin58" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(135, 644)
+
+[node name="Coin59" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(563, 54)
+
+[node name="Coin60" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(700, 224)
+
+[node name="Coin61" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(844, 26)
+
+[node name="Coin62" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(446, 187)
+
+[node name="Coin63" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(721, 360)
+
+[node name="Coin64" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-384, 54)
+
+[node name="Coin65" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-1073, 27)
+
+[node name="Coin66" parent="treasure/coins" instance=ExtResource("6_2insi")]
+position = Vector2(-1252, 131)
+
 [node name="emeralds" type="Node" parent="treasure"]
 
 [node name="Emerald" parent="treasure/emeralds" instance=ExtResource("8_7dv0y")]
@@ -1935,11 +1986,26 @@ position = Vector2(-2883, 5481)
 [node name="Ruby220" parent="treasure/rubys" instance=ExtResource("7_2insi")]
 position = Vector2(-3015, 5614)
 
-[node name="Diamond" parent="treasure/rubys" instance=ExtResource("6_vwbb6")]
-position = Vector2(-2616, 2362)
+[node name="Ruby221" parent="treasure/rubys" instance=ExtResource("7_2insi")]
+position = Vector2(-60, 1059)
 
-[node name="Diamond2" parent="treasure/rubys" instance=ExtResource("6_vwbb6")]
-position = Vector2(477, 3104)
+[node name="Ruby222" parent="treasure/rubys" instance=ExtResource("7_2insi")]
+position = Vector2(577, 369)
+
+[node name="Ruby223" parent="treasure/rubys" instance=ExtResource("7_2insi")]
+position = Vector2(-224, 669)
+
+[node name="Emerald" parent="treasure/rubys" instance=ExtResource("8_7dv0y")]
+position = Vector2(-254, 666)
+
+[node name="Emerald2" parent="treasure/rubys" instance=ExtResource("8_7dv0y")]
+position = Vector2(-459, 375)
+
+[node name="Emerald3" parent="treasure/rubys" instance=ExtResource("8_7dv0y")]
+position = Vector2(903, 374)
+
+[node name="Emerald4" parent="treasure/rubys" instance=ExtResource("8_7dv0y")]
+position = Vector2(-1239, 370)
 
 [node name="Diamonds" type="Node" parent="treasure"]
 
@@ -2155,6 +2221,12 @@ position = Vector2(-1025, 4387)
 
 [node name="Diamond72" parent="treasure/Diamonds" instance=ExtResource("6_vwbb6")]
 position = Vector2(-895, 4425)
+
+[node name="Diamond21" parent="treasure/Diamonds" instance=ExtResource("6_vwbb6")]
+position = Vector2(477, 3104)
+
+[node name="Diamond73" parent="treasure/Diamonds" instance=ExtResource("6_vwbb6")]
+position = Vector2(-2616, 2362)
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_left = -7853.0
