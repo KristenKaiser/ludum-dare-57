@@ -1,0 +1,16 @@
+res://ludum-dare-57/Scenes/decorations/kelp.tscn::d5ed025d9c86fe22c4e6b6668d2d7300::1743985128::res://.godot/exported/133200997/export-4313194ac79dc56ae776bccbb7901364-kelp.scn
+res://ludum-dare-57/Scenes/treasure/Coin.tscn::1a5a94caf358bab30c8ebf2cb6a5f6e3::1743985128::res://.godot/exported/133200997/export-4e4020e4f518d420489fdda2b0484436-Coin.scn
+res://ludum-dare-57/Scenes/treasure/Diamond.tscn::d4b8db0494fef74713ac2639d9c7e911::1743985128::res://.godot/exported/133200997/export-204f9bf62a863335e6fa80250eef3df7-Diamond.scn
+res://ludum-dare-57/Scenes/treasure/Emerald.tscn::d3068993cc0ea5dafb6e9180f9aea8bb::1743985128::res://.godot/exported/133200997/export-b8ac5e4eb71cca14199e5b93dd011389-Emerald.scn
+res://ludum-dare-57/Scenes/treasure/Ruby.tscn::fbfc639df0333803c2a45c9b23f07284::1743985128::res://.godot/exported/133200997/export-1bb244a9bde04a2b0968d051a5a374da-Ruby.scn
+res://ludum-dare-57/Scenes/AudioManager.tscn::270010cf6ec7b58c7d6c214c0680beef::1743985128::res://.godot/exported/133200997/export-1ca67b1a747560f3ff944ae6251e8e58-AudioManager.scn
+res://ludum-dare-57/Scenes/Dead_Menu.tscn::39d15f112c002e6611e59d0fd43a5fbd::1743985128::res://.godot/exported/133200997/export-93d3873614459da119b3bfc133129a02-Dead_Menu.scn
+res://ludum-dare-57/Scenes/Game.tscn::b4c0b5ebd9d67336b7d84dd7c82f9497::1743985128::res://.godot/exported/133200997/export-d8ccfc993e4751e9ca71f687c96c2184-Game.scn
+res://ludum-dare-57/Scenes/Home_Menu.tscn::14be273b7d2726fe43563d38db310f7b::1743985128::res://.godot/exported/133200997/export-602375a332e4c75e079f35325da9567d-Home_Menu.scn
+res://ludum-dare-57/Scenes/Hud.tscn::71fc2f262bf77d3528ec003a0c4f9403::1743985128::res://.godot/exported/133200997/export-5aa4cbe464651fd03caddd2040cbf1f0-Hud.scn
+res://ludum-dare-57/Scenes/Main.tscn::f4ef2643a5557bac6b197c5c5f171a1a::1743985127::res://.godot/exported/133200997/export-2ddfba14a32da6df95a8fff1086a9f26-Main.scn
+res://ludum-dare-57/Scenes/Ocean.tscn::4b48df6e4638c9cec4cb0abd296ca093::1743985128::res://.godot/exported/133200997/export-b2b8bcd6f8ea879a10cab1025e8dbea4-Ocean.scn
+res://ludum-dare-57/Scenes/player.tscn::69d3d0fa2328694f0136332131ac1192::1743985128::res://.godot/exported/133200997/export-de3b7985e011f9aeee44e50dafe16204-player.scn
+res://ludum-dare-57/Scenes/Human.tscn::116bc885b8c58c0daf48aa9cc2b25c2d::1743985128::res://.godot/exported/133200997/export-e483990942e7ef0dca1431818edac30c-Human.scn
+res://ludum-dare-57/Scenes/Shop.tscn::5a6edde594a6784b2e6b7069d365c7d5::1743985128::res://.godot/exported/133200997/export-7838e3003f1b75d7c779ee549d248421-Shop.scn
+res://ludum-dare-57/Scenes/Sub.tscn::0ced9096305fccf75ed371159beb693b::1743985128::res://.godot/exported/133200997/export-7be924e3ab7b5d70293f14a857226bad-Sub.scn
